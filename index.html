@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="leftMenu" class="d-flex">
+      <div class="menu pt-5">
+        <ul>
+          <li><a href="#" onclick="searchOnApi()">Search</a></li>
+          <li>
+            <a href="#" onclick="getFoodByCategories()" data-food="categories"
+              >Category</a
+            >
+          </li>
+          <li><a href="#" onclick="getArea()" data-food="a">Area</a></li>
+          <li>
+            <a onclick="getIngredients()" href="#" data-food="i">Ingredients</a>
+          </li>
+          <li><a onclick="contact()" href="#">Contact Us</a></li>
+        </ul>
+        <div class="menu-footer mb-4 text-white">
+          <div class="footer p-3">
+          <span><li class="fab fa-facebook-f"></li></span>
+          <span><li class="fab fa-twitter"></li></span>
+          <span><li class="fa fa-globe"></li></span>
+          <p class="mb-4">Copyright Â© 2019 All Rights<br />Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="icons">
+        <img src="./images/logo.png" class="mx-auto" alt="logo" />
+        <span><i class="fa fa-bars" id="bars"></i></span>
+        <span><i class="fa fa-close d-none" id="close"></i></span>
+        <div class="footer-icon">
+          <span><i class="fa fa-globe"></i></span>
+          <span><i class="fa fa-share-nodes"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <div id="loading"
+      class="inner-loading-screen d-flex justify-content-center align-items-center">
+      <i class="fa fa-spinner text-white fa-spin fa-5x"></i>
+    </div>
+
+    <section>
+      <div class="container mx-auto w-75 pt-4">
+        <div class="row" id="searchContent"></div>
+      </div>
+    </section>
+
+    <section id="Category">
+      <div class="container">
+        <div class="row g-4 py-4" id="foodCard"></div>
+      </div>
+    </section>
+  
+
+    <select id="details">
+      <div class="container">
+        <div class="row g-4" id="detailsData"></div>
+      </div>
+    </select>
+
+    <section class="" id="contact">
+      <div class="container">
+      
+      </div>
+    </section>
+
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/Contact.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

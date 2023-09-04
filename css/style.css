@@ -1,0 +1,150 @@
+*{
+    list-style: none;
+    text-decoration: none !important;
+}
+.card {
+cursor: pointer !important;
+}
+a{
+    color: #fff !important;
+}
+body{
+    background-color: #000;
+}
+#leftMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: 0.5s;
+}
+ 
+#leftMenu .icons{
+    position: relative;
+    background-color:#fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height:100vh;
+    padding-block: 50px;
+}
+
+#leftMenu .icons img{
+    width: 50px;
+}
+
+#leftMenu .footer-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+#leftMenu .menu{
+    overflow: hidden;
+    width: 0px;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #000;
+    transition:0.5s;
+
+
+}
+
+ 
+
+#leftMenu .menu li{
+    padding-block: 10px;
+}
+
+#leftMenu i {
+    cursor: pointer;
+}
+
+#leftMenu .icons #bars, #leftMenu .icons #close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50% ,-50% );
+}
+
+#foodCard .card{
+    border: none !important;
+    background:transparent !important;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#foodCard .card .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6ca;
+    border-radius: 10px;
+    top: 100%;
+    transition: 0.5s;
+    color: black;
+    display: flex;
+    align-items: center !important;
+    /* justify-content: center; */
+/* flex-direction: column; */
+     padding: 10px;
+
+}
+#Category .card:hover .layer{
+    top: 0;
+}
+
+/* ================================= */
+#detailsData #detailsData span.details-span {
+    color: #fff !important;
+}
+#details .details-list li{
+    width: fit-content;
+}
+.instructions{
+    color: #fff;
+}
+.instructions p.strInstruc {
+    justify-content: left;
+}
+ .img-content p{
+    color: #fff ;
+    font-size: 35px;
+    
+}
+.area{
+    cursor: pointer !important;
+}
+
+.custome-icone {
+    font-size: 70px;
+}
+#searchContent input{
+    border-color: #ccc;
+    color: #ccc;
+    background-color:transparent;
+}
+
+#foodCard form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+ #loading{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    z-index: 999;
+ }
+
+ #loading i {
+    display: none;
+
+ }
